@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#14050c" />
+  <title>Happy Birthday, manoushhhhhhh💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div id="bgHearts" aria-hidden="true"></div>
+
+  <nav class="dock" aria-label="Sections">
+    <button data-target="#wish" aria-label="Make a wish">✨</button>
+    <button data-target="#letter" aria-label="Letter">💌</button>
+    <button data-target="#memories" aria-label="Memories">📷</button>
+    <button data-target="#song" aria-label="Our song">🎵</button>
+    <button data-target="#ending" aria-label="The question">💍</button>
+  </nav>
+
+  <main>
+    <!-- 1. WISH / CAKE -->
+    <section class="section hero" id="wish">
+      <svg class="cake" id="cake" viewBox="0 0 200 190" aria-hidden="true">
+        <defs>
+          <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#ffb21e" />
+            <stop offset="1" stop-color="#ffe46b" />
+          </linearGradient>
+          <linearGradient id="topTier" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ee2a6a" />
+            <stop offset="1" stop-color="#cf1a55" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="176" rx="62" ry="7" fill="#050103" />
+        <g class="tier-bottom">
+          <rect x="36" y="112" width="128" height="58" rx="8" fill="#7d1239" />
+          <circle cx="60" cy="164" r="3.6" fill="#ff5c93" />
+          <circle cx="87" cy="164" r="3.6" fill="#ff5c93" />
+          <circle cx="114" cy="164" r="3.6" fill="#ff5c93" />
+          <circle cx="141" cy="164" r="3.6" fill="#ff5c93" />
+        </g>
+        <rect class="tier-top" x="60" y="74" width="80" height="42" rx="8" fill="url(#topTier)" />
+        <rect x="96" y="38" width="8" height="38" rx="2" fill="#ffe6ee" />
+        <rect x="96" y="46" width="8" height="4" fill="#f58fb0" />
+        <rect x="96" y="56" width="8" height="4" fill="#f58fb0" />
+        <rect x="96" y="66" width="8" height="4" fill="#f58fb0" />
+        <g class="flame" id="flame">
+          <path d="M100 14 C109 25 111 34 100 40 C89 34 91 25 100 14Z" fill="url(#flameGrad)" />
+        </g>
+        <path class="smoke" id="smoke" d="M101 34 C95 28 106 22 99 14 C95 9 100 5 99 1" fill="none" stroke="#e8c7d3" stroke-width="2.2" stroke-linecap="round" />
+      </svg>
+
+      <div class="hero-copy" id="heroCopy">
+        <h1 id="heroTitle">Make a wish,<br /><em>manoushhhhhhh💗</em></h1>
+        <p id="heroSub">Take a deep breath, make a heartfelt wish, and blow out the candle!</p>
+      </div>
+      <button class="main-btn" id="blowBtn">Blow the Candle ❤️</button>
+    </section>
+
+    <!-- 2. LETTER -->
+    <section class="section letter" id="letter">
+      <article class="message-card reveal" id="messageCard">
+        <svg class="heart-photo" viewBox="-4 -4 108 100" aria-label="Young Manoush">
+          <defs>
+            <clipPath id="heartClip">
+              <path d="M50 88 C20 62 4 46 4 28 C4 14 15 4 28 4 C38 4 46 10 50 18 C54 10 62 4 72 4 C85 4 96 14 96 28 C96 46 80 62 50 88Z" />
+            </clipPath>
+            <linearGradient id="heartStroke" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff7fb0" />
+              <stop offset="1" stop-color="#d93a82" />
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="100" height="92" fill="#3a0b20" clip-path="url(#heartClip)" />
+          <image href="assets/childhood-heart.jpg" x="0" y="0" width="100" height="92" preserveAspectRatio="xMidYMid slice" clip-path="url(#heartClip)" />
+          <path d="M50 88 C20 62 4 46 4 28 C4 14 15 4 28 4 C38 4 46 10 50 18 C54 10 62 4 72 4 C85 4 96 14 96 28 C96 46 80 62 50 88Z" fill="none" stroke="url(#heartStroke)" stroke-width="2.6" />
+        </svg>
+        <h2 class="letter-title">To my favorite<br />person,</h2>
+        <div class="letter-body">
+          <p>Happy birthday to my favorite person ❤️</p>
+          <p>I hope you have the most amazing day and this year brings you everything you’ve been wishing for. I just want you to always be happy, keep smiling, and never lose that beautiful energy you have.</p>
+          <p>I’m really lucky to have you in my life, and I hope I can make you smile as much as you make me smile. And I hope to make a lot of good memories together this year, inshallah.</p>
+          <p class="signed">Enjoy ur day ya 7eta 🩷🩷🎉🎉🎉</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. MEMORIES -->
+    <section class="section memories" id="memories" aria-label="Our memories">
+      <p class="eyebrow">✦ SPECIAL MOMENTS ✦</p>
+      <h2 class="section-title">Our <em>Memories</em></h2>
+      <div class="polaroid-wrap">
+        <button class="nav prev" aria-label="Previous photo">←</button>
+        <figure class="polaroid" id="polaroid">
+          <img id="memoryImage" src="assets/memory-1.jpg" alt="A sweet memory" />
+          <figcaption id="memoryCaption">our mirror day ♡</figcaption>
+        </figure>
+        <button class="nav next" aria-label="Next photo">→</button>
+      </div>
+      <p class="photo-count" id="photoCount">PHOTO 1 OF 5</p>
+    </section>
+
+    <!-- 4. SONG -->
+    <section class="section song" id="song">
+      <div class="bg-disc" aria-hidden="true"></div>
+      <div class="player-card reveal" id="playerCard">
+        <div class="album">
+          <div class="disc" id="disc">
+            <div class="disc-label"><i></i></div>
+          </div>
+        </div>
+        <h3 class="track-title">Our Song</h3>
+        <p class="track-sub" dir="rtl">العيون الحلوة دي</p>
+
+        <input class="seek" id="seek" type="range" min="0" max="30" step="0.05" value="0" aria-label="Seek" />
+        <div class="time-row"><span id="played">0:00</span><span id="remaining">-0:30</span></div>
+
+        <div class="controls">
+          <button id="rewind" aria-label="Back 5 seconds">
+            <svg viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d="M11 6v12L2.5 12 11 6Zm10 0v12l-8.5-6L21 6Z"/></svg>
+          </button>
+          <button class="play" id="playSong" aria-label="Play our song">
+            <svg id="iconPlay" viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d="M8 5v14l11-7L8 5Z"/></svg>
+            <svg id="iconPause" viewBox="0 0 24 24" width="30" height="30" hidden><path fill="currentColor" d="M7 5h4v14H7V5Zm6 0h4v14h-4V5Z"/></svg>
+          </button>
+          <button id="forward" aria-label="Forward 5 seconds">
+            <svg viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d="M13 6v12l8.5-6L13 6ZM3 6v12l8.5-6L3 6Z"/></svg>
+          </button>
+        </div>
+
+        <div class="volume-row">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Z"/></svg>
+          <input class="vol" id="vol" type="range" min="0" max="1" step="0.01" value="0.7" aria-label="Volume" />
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4Z"/></svg>
+        </div>
+      </div>
+      <audio id="song-audio" preload="metadata" src="assets/our-song.mp3"></audio>
+    </section>
+
+    <!-- 5. ENDING -->
+    <section class="section ending" id="ending">
+      <div class="question" id="question">
+        <p class="eyebrow">✦ IMPORTANT QUESTION ✦</p>
+        <h2 class="q-title">Will you stay with<br />me forever?</h2>
+
+        <svg class="face" viewBox="0 0 160 160" aria-hidden="true">
+          <defs>
+            <clipPath id="faceClip"><circle cx="80" cy="80" r="64" /></clipPath>
+            <path id="eyeHeart" d="M0 3.4 C-4.6 0 -5.6 -3.4 -2.9 -4.9 C-1.4 -5.7 0 -4.6 0 -3.4 C0 -4.6 1.4 -5.7 2.9 -4.9 C5.6 -3.4 4.6 0 0 3.4Z" />
+          </defs>
+          <circle cx="80" cy="80" r="64" fill="#fff" />
+          <g clip-path="url(#faceClip)" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M122 30 L136 24 L132 42 Z" fill="#ff9ec0" />
+            <!-- body -->
+            <path d="M58 116 L53 150 L70 150 L74 130 Q80 128 86 130 L90 150 L107 150 L102 116" fill="#fff" stroke="#111" stroke-width="2.8" />
+            <!-- hands -->
+            <g fill="#ffd3e2" stroke="#e79ab8" stroke-width="1.2">
+              <path d="M44 106 q-9 -8 -17 -2 q-4 5 2 9 q-6 4 -2 9 q5 4 11 -1 q7 1 9 -6 q2 -5 -3 -9Z" />
+              <path d="M116 106 q9 -8 17 -2 q4 5 -2 9 q6 4 2 9 q-5 4 -11 -1 q-7 1 -9 -6 q-2 -5 3 -9Z" />
+            </g>
+            <!-- head -->
+            <path d="M38 96 C28 44 58 24 82 24 C110 24 132 50 124 96 C112 112 52 112 38 96Z" fill="#fff" stroke="#111" stroke-width="3" />
+            <!-- eyes -->
+            <ellipse cx="58" cy="86" rx="17" ry="20" transform="rotate(-10 58 86)" fill="#0b0b0f" />
+            <ellipse cx="102" cy="88" rx="17" ry="20" transform="rotate(8 102 88)" fill="#0b0b0f" />
+            <circle cx="52" cy="76" r="5.5" fill="#fff" />
+            <circle cx="96" cy="78" r="5.5" fill="#fff" />
+            <circle cx="64" cy="82" r="1.8" fill="#fff" />
+            <circle cx="108" cy="84" r="1.8" fill="#fff" />
+            <use href="#eyeHeart" x="59" y="94" fill="#ff7fa8" />
+            <use href="#eyeHeart" x="104" y="96" fill="#ff7fa8" />
+            <!-- blush + mouth -->
+            <ellipse cx="46" cy="104" rx="11" ry="6" fill="#ff8fb7" opacity=".55" />
+            <ellipse cx="116" cy="106" rx="11" ry="6" fill="#ff8fb7" opacity=".55" />
+            <path d="M72 108 q8 6 16 0" fill="none" stroke="#111" stroke-width="2.6" />
+          </g>
+        </svg>
+
+        <div class="answers" id="answers">
+          <button class="yes" id="yesBtn">Yes! ❤️</button>
+          <button class="no" id="noBtn">No</button>
+        </div>
+      </div>
+
+      <div class="result" id="result" aria-live="polite">
+        <svg class="hug" viewBox="0 0 220 130" aria-hidden="true">
+          <g class="cats" stroke="#111" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+            <!-- back cat (seen from behind) -->
+            <g class="cat-r">
+              <circle cx="124" cy="40" r="7" fill="#fff" />
+              <circle cx="158" cy="40" r="7" fill="#fff" />
+              <ellipse cx="141" cy="56" rx="28" ry="23" fill="#fff" />
+              <ellipse cx="141" cy="98" rx="24" ry="28" fill="#fff" />
+              <path d="M163 90 Q186 78 204 86 Q190 96 166 104Z" fill="#fff" />
+            </g>
+            <!-- front cat (face) -->
+            <g class="cat-l">
+              <circle cx="58" cy="42" r="7" fill="#fff" />
+              <circle cx="94" cy="42" r="7" fill="#fff" />
+              <ellipse cx="76" cy="60" rx="29" ry="23" fill="#fff" />
+              <ellipse cx="80" cy="100" rx="22" ry="26" fill="#fff" />
+              <path d="M62 56 l8 4 l-8 4 M92 56 l-8 4 l8 4" fill="none" />
+              <path d="M70 70 q6 9 12 0Z" fill="#ffb3cc" />
+              <ellipse cx="56" cy="68" rx="5.5" ry="3.4" fill="#ff9fbd" stroke="none" />
+              <ellipse cx="98" cy="68" rx="5.5" ry="3.4" fill="#ff9fbd" stroke="none" />
+            </g>
+            <!-- arms hugging -->
+            <path d="M96 94 Q122 80 150 98" fill="none" stroke-width="3" />
+            <path d="M92 104 Q124 90 152 108" fill="none" stroke-width="3" />
+          </g>
+          <text class="hh h1" x="22" y="46" font-size="16">💗</text>
+          <text class="hh h2" x="186" y="40" font-size="15">💗</text>
+          <text class="hh h3" x="104" y="18" font-size="15">💗</text>
+          <text class="hh h4" x="18" y="108" font-size="14">💗</text>
+          <text class="hh h5" x="192" y="116" font-size="14">💗</text>
+        </svg>
+        <h2 class="yes-title">Knew you would<br />say yes! ❤️</h2>
+        <p class="crown">👑</p>
+        <p class="made">Made with all my love for you ❤️</p>
+        <p class="tag">FOREVER &amp; ALWAYS</p>
+        <button class="back-top" id="backTop">↑ Back to Top</button>
+      </div>
+    </section>
+  </main>
+
+    <script src="script.js?v=2"></script>
+  <script>
+  /* منطق زرار No والصفحة الأخيرة (بيشتغل حتى لو script.js قديم) */
+  (function () {
+    var ending = document.getElementById('ending');
+    var yesOld = document.getElementById('yesBtn'), noOld = document.getElementById('noBtn');
+    if (!ending || !yesOld || !noOld) return;
+    var yesBtn = yesOld.cloneNode(true), noBtn = noOld.cloneNode(true);
+    yesOld.replaceWith(yesBtn); noOld.replaceWith(noBtn);
+    var labels = ['No', 'Please? \uD83E\uDD7A', 'Really?!', 'Are you sure? \uD83E\uDD79', 'Knew you would say yes! \u2728'];
+    var count = 0, finished = false, timer = null;
+    function finale() {
+      if (finished) return;
+      finished = true; clearTimeout(timer);
+      var r = yesBtn.getBoundingClientRect();
+      heartsFrom(yesBtn, 26);
+      burst(r.left + r.width / 2, r.top + r.height / 2, 190);
+      setTimeout(function () { ending.classList.add('done'); rain(5200); burst(innerWidth / 2, innerHeight * .3, 120); }, 450);
+    }
+    noBtn.addEventListener('click', function () {
+      if (finished) return;
+      if (count >= labels.length - 1) { heartsFrom(yesBtn, 20); finale(); return; }
+      count++;
+      noBtn.textContent = labels[count];
+      yesBtn.style.fontSize = Math.min(16 + count * 6, 40) + 'px';
+      yesBtn.style.borderRadius = count > 2 ? '28px' : '40px';
+      noBtn.style.fontSize = Math.max(10, 15 - count * 1.5) + 'px';
+      noBtn.style.padding = count > 2 ? '10px 12px' : '12px 18px';
+      heartsFrom(yesBtn, 12 + count * 3);
+      if (count >= labels.length - 1) timer = setTimeout(function () { if (!finished) { heartsFrom(yesBtn, 20); finale(); } }, 1500);
+    });
+    yesBtn.addEventListener('click', finale);
+    document.getElementById('backTop').addEventListener('click', function () {
+      setTimeout(function () {
+        count = 0; finished = false; clearTimeout(timer);
+        noBtn.textContent = 'No';
+        yesBtn.removeAttribute('style'); noBtn.removeAttribute('style');
+      }, 900);
+    });
+  })();
+  </script>
+</body>
+</html>
